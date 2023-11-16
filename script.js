@@ -1,4 +1,3 @@
-<script>
   $(document).ready(function () {
     // Инициализация Bloodhound для работы с источниками данных
     var addressSuggestions = new Bloodhound({
@@ -34,4 +33,3 @@
       }
     );
   });
-</script>
