@@ -1,4 +1,6 @@
-  $(document).ready(function () {
+// script.js
+
+$(document).ready(function () {
     // Инициализация Bloodhound для работы с источниками данных
     var addressSuggestions = new Bloodhound({
       datumTokenizer: Bloodhound.tokenizers.obj.whitespace('value'),
@@ -32,4 +34,4 @@
         source: addressSuggestions
       }
     );
-  });
+});
