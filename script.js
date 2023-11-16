@@ -1,7 +1,6 @@
-<!-- jQuery -->
+User
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-<!-- Typeahead.js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.11.1/typeahead.bundle.min.js"></script>
 
 <script>
@@ -26,7 +25,6 @@
         }
       }
     });
-
     // Инициализация Typeahead.js для вашей формы
     $('#gpa-3').typeahead(
       {
@@ -40,32 +38,5 @@
         source: addressSuggestions
       }
     );
-
-    // Обработчик события для кнопки расчета расстояния
-    $('.btn-delivery').click(function () {
-      var startPoint = 'Пушкинский район,пос. Софрино, Ул. Ленина 4а'; // Замените на ваш адрес точки A
-      var endPoint = $('#gpa-3').val(); // Значение из формы, которое представляет точку B
-
-      // Запрос к Yandex API для расчета расстояния
-      $.ajax({
-        url: 'https://api-maps.yandex.ru/2.1/distancematrix',
-        type: 'GET',
-        dataType: 'json',
-        data: {
-          apikey: '734d6ffd-4057-4b0e-adea-99839e0fb7a6',
-          origins: startPoint,
-          destinations: endPoint,
-          lang: 'ru-RU'
-        },
-        success: function (response) {
-          var distance = response.rows[0].elements[0].distance.text;
-          // Вывод результата в нужное место, например, в элемент с классом result-price-delivery
-          $('.result-price-delivery').text('Расстояние: ' + distance);
-        },
-        error: function (error) {
-          console.log(error);
-        }
-      });
-    });
   });
 </script>
