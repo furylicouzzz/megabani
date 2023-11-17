@@ -1,0 +1,25 @@
+/* Основной стиль поля ввода */
+.gpa-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+}
+
+/* Стили для выпадающего меню */
+.tt-menu {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+/* Стили для отдельных элементов выпадающего меню */
+.tt-suggestion {
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Стили при наведении курсора на элемент выпадающего меню */
+.tt-suggestion:hover {
+  background-color: #f2f2f2;
+}
