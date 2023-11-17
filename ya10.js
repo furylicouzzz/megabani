@@ -58,7 +58,7 @@ function init() {
 
           // Выводим результаты
           resultDistanceContainer.text("Расстояние: " + distance + " км");
-          resultPriceContainer.text("Стоимость: " + totalCost.toLocaleString() + " руб.");
+          resultPriceContainer.text("Стоимость: " + totalCost.toLocaleString() + " ₽");
         },
         function (error) {
           resultDistanceContainer.text("");
