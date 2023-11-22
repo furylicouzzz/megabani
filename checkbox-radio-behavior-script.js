@@ -2,6 +2,8 @@
 // Активирует checkbox-field-hidden и применяет стили для checkbox-button-field-2 с совпадающими значениями.
 // Также активирует radio-button-field-hidden и применяет стили для radio-button-field-2 с совпадающими значениями.
 // Поведение chekbox и radio button
+
+
 $(document).ready(function () {
     // Выбрать все группы parametrs-content-items
     $('.parametrs-content-items').each(function () {
