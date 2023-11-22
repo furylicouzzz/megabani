@@ -1,7 +1,7 @@
 // Инициализация выбора опций для групп parametrs-content-items.
 // Активирует checkbox-field-hidden и применяет стили для checkbox-button-field-2 с совпадающими значениями.
 // Также активирует radio-button-field-hidden и применяет стили для radio-button-field-2 с совпадающими значениями.
-// Поведение chekbox и radio button
+// Поведение cheсkbox и radio button
 
 
 $(document).ready(function () {
