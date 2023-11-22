@@ -26,4 +26,3 @@ src="https://code.jquery.com/jquery-3.6.4.min.js"
     var match = priceString.match(/\d+/);
     return match ? parseInt(match[0], 10) : 0;
   }
-</script>
